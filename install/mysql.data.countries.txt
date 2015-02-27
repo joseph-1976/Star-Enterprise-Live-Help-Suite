@@ -1,0 +1,269 @@
+# phpMyAdmin SQL Dump
+# version 2.5.6
+# http://www.phpmyadmin.net
+#
+# Host: localhost
+# Generation Time: Apr 16, 2004 at 01:25 AM
+# Server version: 4.0.16
+# PHP Version: 4.3.2
+# 
+# Database : `prefix_`
+# 
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_countries`
+#
+
+CREATE TABLE `prefix_countries` (
+  `code` char(2) NOT NULL default '',
+  `country` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`code`)
+) TYPE=MyISAM;
+
+#
+# Dumping data for table `prefix_countries`
+#
+
+INSERT INTO `prefix_countries` VALUES ('AD', 'ANDORRA');
+INSERT INTO `prefix_countries` VALUES ('AE', 'UNITED ARAB EMIRATES');
+INSERT INTO `prefix_countries` VALUES ('AF', 'AFGHANISTAN');
+INSERT INTO `prefix_countries` VALUES ('AG', 'ANTIGUA AND BARBUDA');
+INSERT INTO `prefix_countries` VALUES ('AI', 'ANGUILLA');
+INSERT INTO `prefix_countries` VALUES ('AL', 'ALBANIA');
+INSERT INTO `prefix_countries` VALUES ('AM', 'ARMENIA');
+INSERT INTO `prefix_countries` VALUES ('AN', 'NETHERLANDS ANTILLES');
+INSERT INTO `prefix_countries` VALUES ('AO', 'ANGOLA');
+INSERT INTO `prefix_countries` VALUES ('AQ', 'ANTARCTICA');
+INSERT INTO `prefix_countries` VALUES ('AR', 'ARGENTINA');
+INSERT INTO `prefix_countries` VALUES ('AS', 'AMERICAN SAMOA');
+INSERT INTO `prefix_countries` VALUES ('AT', 'AUSTRIA');
+INSERT INTO `prefix_countries` VALUES ('AU', 'AUSTRALIA');
+INSERT INTO `prefix_countries` VALUES ('AW', 'ARUBA');
+INSERT INTO `prefix_countries` VALUES ('AX', 'ÅLAND ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('AZ', 'AZERBAIJAN');
+INSERT INTO `prefix_countries` VALUES ('BA', 'BOSNIA AND HERZEGOVINA');
+INSERT INTO `prefix_countries` VALUES ('BB', 'BARBADOS');
+INSERT INTO `prefix_countries` VALUES ('BD', 'BANGLADESH');
+INSERT INTO `prefix_countries` VALUES ('BE', 'BELGIUM');
+INSERT INTO `prefix_countries` VALUES ('BF', 'BURKINA FASO');
+INSERT INTO `prefix_countries` VALUES ('BG', 'BULGARIA');
+INSERT INTO `prefix_countries` VALUES ('BH', 'BAHRAIN');
+INSERT INTO `prefix_countries` VALUES ('BI', 'BURUNDI');
+INSERT INTO `prefix_countries` VALUES ('BJ', 'BENIN');
+INSERT INTO `prefix_countries` VALUES ('BM', 'BERMUDA');
+INSERT INTO `prefix_countries` VALUES ('BN', 'BRUNEI DARUSSALAM');
+INSERT INTO `prefix_countries` VALUES ('BO', 'BOLIVIA');
+INSERT INTO `prefix_countries` VALUES ('BR', 'BRAZIL');
+INSERT INTO `prefix_countries` VALUES ('BS', 'BAHAMAS');
+INSERT INTO `prefix_countries` VALUES ('BT', 'BHUTAN');
+INSERT INTO `prefix_countries` VALUES ('BV', 'BOUVET ISLAND');
+INSERT INTO `prefix_countries` VALUES ('BW', 'BOTSWANA');
+INSERT INTO `prefix_countries` VALUES ('BY', 'BELARUS');
+INSERT INTO `prefix_countries` VALUES ('BZ', 'BELIZE');
+INSERT INTO `prefix_countries` VALUES ('CA', 'CANADA');
+INSERT INTO `prefix_countries` VALUES ('CC', 'COCOS (KEELING) ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('CD', 'CONGO, THE DEMOCRATIC REPUBLIC OF THE');
+INSERT INTO `prefix_countries` VALUES ('CF', 'CENTRAL AFRICAN REPUBLIC');
+INSERT INTO `prefix_countries` VALUES ('CG', 'CONGO');
+INSERT INTO `prefix_countries` VALUES ('CH', 'SWITZERLAND');
+INSERT INTO `prefix_countries` VALUES ('CI', 'COTE D\'IVOIRE');
+INSERT INTO `prefix_countries` VALUES ('CK', 'COOK ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('CL', 'CHILE');
+INSERT INTO `prefix_countries` VALUES ('CM', 'CAMEROON');
+INSERT INTO `prefix_countries` VALUES ('CN', 'CHINA');
+INSERT INTO `prefix_countries` VALUES ('CO', 'COLOMBIA');
+INSERT INTO `prefix_countries` VALUES ('CR', 'COSTA RICA');
+INSERT INTO `prefix_countries` VALUES ('CS', 'SERBIA AND MONTENEGRO');
+INSERT INTO `prefix_countries` VALUES ('CU', 'CUBA');
+INSERT INTO `prefix_countries` VALUES ('CV', 'CAPE VERDE');
+INSERT INTO `prefix_countries` VALUES ('CX', 'CHRISTMAS ISLAND');
+INSERT INTO `prefix_countries` VALUES ('CY', 'CYPRUS');
+INSERT INTO `prefix_countries` VALUES ('CZ', 'CZECH REPUBLIC');
+INSERT INTO `prefix_countries` VALUES ('DE', 'GERMANY');
+INSERT INTO `prefix_countries` VALUES ('DJ', 'DJIBOUTI');
+INSERT INTO `prefix_countries` VALUES ('DK', 'DENMARK');
+INSERT INTO `prefix_countries` VALUES ('DM', 'DOMINICA');
+INSERT INTO `prefix_countries` VALUES ('DO', 'DOMINICAN REPUBLIC');
+INSERT INTO `prefix_countries` VALUES ('DZ', 'ALGERIA');
+INSERT INTO `prefix_countries` VALUES ('EC', 'ECUADOR');
+INSERT INTO `prefix_countries` VALUES ('EE', 'ESTONIA');
+INSERT INTO `prefix_countries` VALUES ('EG', 'EGYPT');
+INSERT INTO `prefix_countries` VALUES ('EH', 'WESTERN SAHARA');
+INSERT INTO `prefix_countries` VALUES ('ER', 'ERITREA');
+INSERT INTO `prefix_countries` VALUES ('ES', 'SPAIN');
+INSERT INTO `prefix_countries` VALUES ('ET', 'ETHIOPIA');
+INSERT INTO `prefix_countries` VALUES ('FI', 'FINLAND');
+INSERT INTO `prefix_countries` VALUES ('FJ', 'FIJI');
+INSERT INTO `prefix_countries` VALUES ('FK', 'FALKLAND ISLANDS (MALVINAS)');
+INSERT INTO `prefix_countries` VALUES ('FM', 'MICRONESIA, FEDERATED STATES OF');
+INSERT INTO `prefix_countries` VALUES ('FO', 'FAROE ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('FR', 'FRANCE');
+INSERT INTO `prefix_countries` VALUES ('GA', 'GABON');
+INSERT INTO `prefix_countries` VALUES ('GB', 'UNITED KINGDOM');
+INSERT INTO `prefix_countries` VALUES ('GD', 'GRENADA');
+INSERT INTO `prefix_countries` VALUES ('GE', 'GEORGIA');
+INSERT INTO `prefix_countries` VALUES ('GF', 'FRENCH GUIANA');
+INSERT INTO `prefix_countries` VALUES ('GH', 'GHANA');
+INSERT INTO `prefix_countries` VALUES ('GI', 'GIBRALTAR');
+INSERT INTO `prefix_countries` VALUES ('GL', 'GREENLAND');
+INSERT INTO `prefix_countries` VALUES ('GM', 'GAMBIA');
+INSERT INTO `prefix_countries` VALUES ('GN', 'GUINEA');
+INSERT INTO `prefix_countries` VALUES ('GP', 'GUADELOUPE');
+INSERT INTO `prefix_countries` VALUES ('GQ', 'EQUATORIAL GUINEA');
+INSERT INTO `prefix_countries` VALUES ('GR', 'GREECE');
+INSERT INTO `prefix_countries` VALUES ('GS', 'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('GT', 'GUATEMALA');
+INSERT INTO `prefix_countries` VALUES ('GU', 'GUAM');
+INSERT INTO `prefix_countries` VALUES ('GW', 'GUINEA-BISSAU');
+INSERT INTO `prefix_countries` VALUES ('GY', 'GUYANA');
+INSERT INTO `prefix_countries` VALUES ('HK', 'HONG KONG');
+INSERT INTO `prefix_countries` VALUES ('HM', 'HEARD ISLAND AND MCDONALD ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('HN', 'HONDURAS');
+INSERT INTO `prefix_countries` VALUES ('HR', 'CROATIA');
+INSERT INTO `prefix_countries` VALUES ('HT', 'HAITI');
+INSERT INTO `prefix_countries` VALUES ('HU', 'HUNGARY');
+INSERT INTO `prefix_countries` VALUES ('ID', 'INDONESIA');
+INSERT INTO `prefix_countries` VALUES ('IE', 'IRELAND');
+INSERT INTO `prefix_countries` VALUES ('IL', 'ISRAEL');
+INSERT INTO `prefix_countries` VALUES ('IN', 'INDIA');
+INSERT INTO `prefix_countries` VALUES ('IO', 'BRITISH INDIAN OCEAN TERRITORY');
+INSERT INTO `prefix_countries` VALUES ('IQ', 'IRAQ');
+INSERT INTO `prefix_countries` VALUES ('IR', 'IRAN, ISLAMIC REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('IS', 'ICELAND');
+INSERT INTO `prefix_countries` VALUES ('IT', 'ITALY');
+INSERT INTO `prefix_countries` VALUES ('JM', 'JAMAICA');
+INSERT INTO `prefix_countries` VALUES ('JO', 'JORDAN');
+INSERT INTO `prefix_countries` VALUES ('JP', 'JAPAN');
+INSERT INTO `prefix_countries` VALUES ('KE', 'KENYA');
+INSERT INTO `prefix_countries` VALUES ('KG', 'KYRGYZSTAN');
+INSERT INTO `prefix_countries` VALUES ('KH', 'CAMBODIA');
+INSERT INTO `prefix_countries` VALUES ('KI', 'KIRIBATI');
+INSERT INTO `prefix_countries` VALUES ('KM', 'COMOROS');
+INSERT INTO `prefix_countries` VALUES ('KN', 'SAINT KITTS AND NEVIS');
+INSERT INTO `prefix_countries` VALUES ('KP', 'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('KR', 'KOREA, REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('KW', 'KUWAIT');
+INSERT INTO `prefix_countries` VALUES ('KY', 'CAYMAN ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('KZ', 'KAZAKHSTAN');
+INSERT INTO `prefix_countries` VALUES ('LA', 'LAO PEOPLE\'S DEMOCRATIC REPUBLIC');
+INSERT INTO `prefix_countries` VALUES ('LB', 'LEBANON');
+INSERT INTO `prefix_countries` VALUES ('LC', 'SAINT LUCIA');
+INSERT INTO `prefix_countries` VALUES ('LI', 'LIECHTENSTEIN');
+INSERT INTO `prefix_countries` VALUES ('LK', 'SRI LANKA');
+INSERT INTO `prefix_countries` VALUES ('LR', 'LIBERIA');
+INSERT INTO `prefix_countries` VALUES ('LS', 'LESOTHO');
+INSERT INTO `prefix_countries` VALUES ('LT', 'LITHUANIA');
+INSERT INTO `prefix_countries` VALUES ('LU', 'LUXEMBOURG');
+INSERT INTO `prefix_countries` VALUES ('LV', 'LATVIA');
+INSERT INTO `prefix_countries` VALUES ('LY', 'LIBYAN ARAB JAMAHIRIYA');
+INSERT INTO `prefix_countries` VALUES ('MA', 'MOROCCO');
+INSERT INTO `prefix_countries` VALUES ('MC', 'MONACO');
+INSERT INTO `prefix_countries` VALUES ('MD', 'MOLDOVA, REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('MG', 'MADAGASCAR');
+INSERT INTO `prefix_countries` VALUES ('MH', 'MARSHALL ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('MK', 'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('ML', 'MALI');
+INSERT INTO `prefix_countries` VALUES ('MM', 'MYANMAR');
+INSERT INTO `prefix_countries` VALUES ('MN', 'MONGOLIA');
+INSERT INTO `prefix_countries` VALUES ('MO', 'MACAO');
+INSERT INTO `prefix_countries` VALUES ('MP', 'NORTHERN MARIANA ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('MQ', 'MARTINIQUE');
+INSERT INTO `prefix_countries` VALUES ('MR', 'MAURITANIA');
+INSERT INTO `prefix_countries` VALUES ('MS', 'MONTSERRAT');
+INSERT INTO `prefix_countries` VALUES ('MT', 'MALTA');
+INSERT INTO `prefix_countries` VALUES ('MU', 'MAURITIUS');
+INSERT INTO `prefix_countries` VALUES ('MV', 'MALDIVES');
+INSERT INTO `prefix_countries` VALUES ('MW', 'MALAWI');
+INSERT INTO `prefix_countries` VALUES ('MX', 'MEXICO');
+INSERT INTO `prefix_countries` VALUES ('MY', 'MALAYSIA');
+INSERT INTO `prefix_countries` VALUES ('MZ', 'MOZAMBIQUE');
+INSERT INTO `prefix_countries` VALUES ('NA', 'NAMIBIA');
+INSERT INTO `prefix_countries` VALUES ('NC', 'NEW CALEDONIA');
+INSERT INTO `prefix_countries` VALUES ('NE', 'NIGER');
+INSERT INTO `prefix_countries` VALUES ('NF', 'NORFOLK ISLAND');
+INSERT INTO `prefix_countries` VALUES ('NG', 'NIGERIA');
+INSERT INTO `prefix_countries` VALUES ('NI', 'NICARAGUA');
+INSERT INTO `prefix_countries` VALUES ('NL', 'NETHERLANDS');
+INSERT INTO `prefix_countries` VALUES ('NO', 'NORWAY');
+INSERT INTO `prefix_countries` VALUES ('NP', 'NEPAL');
+INSERT INTO `prefix_countries` VALUES ('NR', 'NAURU');
+INSERT INTO `prefix_countries` VALUES ('NU', 'NIUE');
+INSERT INTO `prefix_countries` VALUES ('NZ', 'NEW ZEALAND');
+INSERT INTO `prefix_countries` VALUES ('OM', 'OMAN');
+INSERT INTO `prefix_countries` VALUES ('PA', 'PANAMA');
+INSERT INTO `prefix_countries` VALUES ('PE', 'PERU');
+INSERT INTO `prefix_countries` VALUES ('PF', 'FRENCH POLYNESIA');
+INSERT INTO `prefix_countries` VALUES ('PG', 'PAPUA NEW GUINEA');
+INSERT INTO `prefix_countries` VALUES ('PH', 'PHILIPPINES');
+INSERT INTO `prefix_countries` VALUES ('PK', 'PAKISTAN');
+INSERT INTO `prefix_countries` VALUES ('PL', 'POLAND');
+INSERT INTO `prefix_countries` VALUES ('PM', 'SAINT PIERRE AND MIQUELON');
+INSERT INTO `prefix_countries` VALUES ('PN', 'PITCAIRN');
+INSERT INTO `prefix_countries` VALUES ('PR', 'PUERTO RICO');
+INSERT INTO `prefix_countries` VALUES ('PS', 'PALESTINIAN TERRITORY, OCCUPIED');
+INSERT INTO `prefix_countries` VALUES ('PT', 'PORTUGAL');
+INSERT INTO `prefix_countries` VALUES ('PW', 'PALAU');
+INSERT INTO `prefix_countries` VALUES ('PY', 'PARAGUAY');
+INSERT INTO `prefix_countries` VALUES ('QA', 'QATAR');
+INSERT INTO `prefix_countries` VALUES ('RE', 'REUNION');
+INSERT INTO `prefix_countries` VALUES ('RO', 'ROMANIA');
+INSERT INTO `prefix_countries` VALUES ('RU', 'RUSSIAN FEDERATION');
+INSERT INTO `prefix_countries` VALUES ('RW', 'RWANDA');
+INSERT INTO `prefix_countries` VALUES ('SA', 'SAUDI ARABIA');
+INSERT INTO `prefix_countries` VALUES ('SB', 'SOLOMON ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('SC', 'SEYCHELLES');
+INSERT INTO `prefix_countries` VALUES ('SD', 'SUDAN');
+INSERT INTO `prefix_countries` VALUES ('SE', 'SWEDEN');
+INSERT INTO `prefix_countries` VALUES ('SG', 'SINGAPORE');
+INSERT INTO `prefix_countries` VALUES ('SH', 'SAINT HELENA');
+INSERT INTO `prefix_countries` VALUES ('SI', 'SLOVENIA');
+INSERT INTO `prefix_countries` VALUES ('SJ', 'SVALBARD AND JAN MAYEN');
+INSERT INTO `prefix_countries` VALUES ('SK', 'SLOVAKIA');
+INSERT INTO `prefix_countries` VALUES ('SL', 'SIERRA LEONE');
+INSERT INTO `prefix_countries` VALUES ('SM', 'SAN MARINO');
+INSERT INTO `prefix_countries` VALUES ('SN', 'SENEGAL');
+INSERT INTO `prefix_countries` VALUES ('SO', 'SOMALIA');
+INSERT INTO `prefix_countries` VALUES ('SR', 'SURINAME');
+INSERT INTO `prefix_countries` VALUES ('ST', 'SAO TOME AND PRINCIPE');
+INSERT INTO `prefix_countries` VALUES ('SV', 'EL SALVADOR');
+INSERT INTO `prefix_countries` VALUES ('SY', 'SYRIAN ARAB REPUBLIC');
+INSERT INTO `prefix_countries` VALUES ('SZ', 'SWAZILAND');
+INSERT INTO `prefix_countries` VALUES ('TC', 'TURKS AND CAICOS ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('TD', 'CHAD');
+INSERT INTO `prefix_countries` VALUES ('TF', 'FRENCH SOUTHERN TERRITORIES');
+INSERT INTO `prefix_countries` VALUES ('TG', 'TOGO');
+INSERT INTO `prefix_countries` VALUES ('TH', 'THAILAND');
+INSERT INTO `prefix_countries` VALUES ('TJ', 'TAJIKISTAN');
+INSERT INTO `prefix_countries` VALUES ('TK', 'TOKELAU');
+INSERT INTO `prefix_countries` VALUES ('TL', 'TIMOR-LESTE');
+INSERT INTO `prefix_countries` VALUES ('TM', 'TURKMENISTAN');
+INSERT INTO `prefix_countries` VALUES ('TN', 'TUNISIA');
+INSERT INTO `prefix_countries` VALUES ('TO', 'TONGA');
+INSERT INTO `prefix_countries` VALUES ('TR', 'TURKEY');
+INSERT INTO `prefix_countries` VALUES ('TT', 'TRINIDAD AND TOBAGO');
+INSERT INTO `prefix_countries` VALUES ('TV', 'TUVALU');
+INSERT INTO `prefix_countries` VALUES ('TW', 'TAIWAN, PROVINCE OF CHINA');
+INSERT INTO `prefix_countries` VALUES ('TZ', 'TANZANIA, UNITED REPUBLIC OF');
+INSERT INTO `prefix_countries` VALUES ('UA', 'UKRAINE');
+INSERT INTO `prefix_countries` VALUES ('UG', 'UGANDA');
+INSERT INTO `prefix_countries` VALUES ('UK', 'UNITED KINGDOM');
+INSERT INTO `prefix_countries` VALUES ('UM', 'UNITED STATES MINOR OUTLYING ISLANDS');
+INSERT INTO `prefix_countries` VALUES ('US', 'UNITED STATES');
+INSERT INTO `prefix_countries` VALUES ('UY', 'URUGUAY');
+INSERT INTO `prefix_countries` VALUES ('UZ', 'UZBEKISTAN');
+INSERT INTO `prefix_countries` VALUES ('VA', 'HOLY SEE (VATICAN CITY STATE)');
+INSERT INTO `prefix_countries` VALUES ('VC', 'SAINT VINCENT AND THE GRENADINES');
+INSERT INTO `prefix_countries` VALUES ('VE', 'VENEZUELA');
+INSERT INTO `prefix_countries` VALUES ('VG', 'VIRGIN ISLANDS, BRITISH');
+INSERT INTO `prefix_countries` VALUES ('VI', 'VIRGIN ISLANDS, U.S.');
+INSERT INTO `prefix_countries` VALUES ('VN', 'VIET NAM');
+INSERT INTO `prefix_countries` VALUES ('VU', 'VANUATU');
+INSERT INTO `prefix_countries` VALUES ('WF', 'WALLIS AND FUTUNA');
+INSERT INTO `prefix_countries` VALUES ('WS', 'SAMOA');
+INSERT INTO `prefix_countries` VALUES ('YE', 'YEMEN');
+INSERT INTO `prefix_countries` VALUES ('YT', 'MAYOTTE');
+INSERT INTO `prefix_countries` VALUES ('ZA', 'SOUTH AFRICA');
+INSERT INTO `prefix_countries` VALUES ('ZM', 'ZAMBIA');
+INSERT INTO `prefix_countries` VALUES ('ZW', 'ZIMBABWE');

@@ -1,0 +1,184 @@
+------------------------------------
+
+Star Enterprise Live Help Created by: Joseph Stenhouse (Involution Media) 2007 CHANGELOG
+
+Current Released Stable Version: 2.6.0 Final
+Current Beta Development Version: Unavailable
+Current Windows Client Version: 1.6.1
+
+Author: stardevelop.com
+Created Document: 20th September 2003
+CHANGELOG Last Edited: 13th July 2004
+
+------------------------------------
+
+
+CURRENT KNOWN ISSUES ( TODO LIST - IN DEVELOPMENT )
+
+* ISSUE: Ensure if Admin user has unexpected aborted/logout the support session with the guest user is returned to the pending queue.
+* ISSUE: Windows Client SSL support to enable secure communications, options to remove conversation once complete.
+* ISSUE: Internet Explorer will not float the Initiate chat within XHTML [or standards-forced] compliant documents, Mozilla / Mozilla Firebird working, resolve with JavaScript External source. 
+* ISSUE: Pending users sometimes appear as duplicates in Online/Offline/Pending user lists [Messenger Preview]
+* ISSUE: Resolve Messenger Preview authentication session errors, enhance overal authentication.
+* ISSUE: Reduce message re-downloading within the Windows preview release when Windows are opened and closed.
+* ISSUE: Resolve system fonts within different operating systems, within Messenger Preview.
+* ISSUE: Resolve Windows Preview staff message alerts from users in multiple departments, messages from different users.
+
+MAJOR UPCOMING NEW FEATURES
+
+* TODO: Add the ability to leave notes/memos against a guest user support session.
+* TODO: Add Options to adjust Windows Client popup timout (seconds to infinite) and change different popup sounds/length/loop.
+* TODO: Add ability to search a browsers previous chat transcripts and missed request details.
+* TODO: Add full stats on all users, response times, call queue times, transcripts of responses, search transcripts.
+* TODO: Add ability to view other operators current status' within the Windows Messenger Online/Offline tab.
+* TODO: Add SSL support within the Live Help Messeneger Preview for secure communications.
+* TODO: Add Windows Client auto Away mode when screen saver activated [Windows Application ONLY].
+* TODO: Add Windows Client Spell Checking features [Office 2003 Required].
+* TODO: Add share transcripts with multiple operators ie. conference setup.
+* TODO: Add options for browsing popup to display for unique visitors or every page load.
+
+
+MINOR UPCOMING NEW FEATURES
+
+* TODO: Allow user to specify Alternate Images Directory to search for the Online/Offline/Be Right Back Status' images.
+* TODO: Allow usage statistics, enter IP address range to discard from statistics.
+* TODO: Email Transcript after Live Help session has ended and visitor Logged out.
+* TODO: Full listing summary of current Site Visitor Information, [Windows Application ONLY].
+* TODO: Add average estimated time to wait for Pending site visitor.
+* TODO: Add full list of departments with Online/Offline status' when site visitor enters Live Help.
+* TODO: Add option to have extra details at guest login ie. Initial Question/Subject and leave comments along with rating
+* TODO: Add popups for guest/staff messages within Windows Application
+* TODO: Resolve language pack translation issues per release, so not required to re-translate whole file.
+* TODO: Add ability to see the selected department for a guest user.
+* TODO: Add optional Installation section to FTP the configuration file to the server.
+
+------------------------------------
+
+Current Beta Development Version:  2.7 Final CHANGELOG
+
+------------------------------------
+
+NEW FEATURES/IMPROVEMENTS ( Version 2.6 - 2.7 )
+
+* FEATURE: Add Windows Client Interface to open and flash in Windows Taskbar when users are in Pending Status.
+* FEATURE: Add Windows Client chat dialog detects links and opens then in default browser.
+* FEATURE: Add Windows Client Transfer User Popups to alert staff members a site visitor has been transferred.
+* FEATURE: Add sound alerts throughout the Chat dialog when new messages are received, flash Windows application window and open for staff messages.
+
+* IMPROVEMENT: removed the powered by stardevelop Live Help button from the chat.
+* IMPROVEMENT: added ability to disable the Help Popup when hovering over the Live Help status images.
+* IMPROVEMENT: added ability to empty the chat, statistics and visitor data within the Live Help Database section.
+
+BUG FIXES ( Version 2.6 - 2.7 )
+
+* BUG FIX: resolved/Combined duplicate MySQL connections within a single page loads, reduce MySQL server load.
+* BUG FIX: resolved MySQL issues within the several functions.
+* BUG FIX: resolved Mozilla Firebird enhanced site visitor tracking issues.
+* BUG FIX: resolved <script> tag errors when placed between <head> tags, decreases page load time if <script> tag moved between <head> tags.
+* BUG FIX: resolved Reports section not using set timezone from Live Help > Settings.
+* BUG FIX: resolved encoding for different language pack files throughout Live Help files.
+
+------------------------------------
+
+Current Released Stable Version:  2.6 Final CHANGELOG
+
+------------------------------------
+
+NEW FEATURES/IMPROVEMENTS ( Version 2.1 - 2.6 )
+
+* FEATURE: added timezone functionality to set the current time of the chat to the Admin -> Settings -> Time.
+* FEATURE: added the ability to hide visitors from the Site Visitors section if they remain online for excessive time, the Visitor reappears if they refresh a page.
+* FEATURE: added all NEW Initiate Chat functions, improved interface to request the users response to the request.
+* FEATURE: added Admin -> Settings -> Chat to control the location and image of the Initiate Chat feature.
+	- Warning: Do not change the size of the Image unless you are an advanced user and have altered the ImageMap co-ordinates.
+* FEATURE: added the 'User is Typing' feature to the Guest and Administration messengers.
+* FEATURE: added Live Support Timer on Guest messenger to show the current amount of time online with Live Help.
+* FEATURE: added the 'Exit Chat:  Support Operator has closed this support session' option to chat interface.
+* FEATURE: added timeout if no response received, redirect to Leave Offline Message or option to continue waiting.
+* FEATURE: added ability to turn off the time and username name within the Chat.
+* FEATURE: added option to request feedback if chat has started and finished, guest sends logout message to supporters.
+* FEATURE: added referrer to online site visitors, and removed unnecesscary data from the visitor information.
+* FEATURE: added Logged IP, Country [IP2Country], URL, page title to the bottom of all Live Help offline messages.
+* FEATURE: added ability to browse through previous support sessions within the Reports menu.
+* FEATURE: added ability for users to be assigned to multiple departments.
+	- eg. in the user's department field type departments as follows:  Sales; Support; Management
+* FEATURE: added Installation option to install optional custom IP2Country Geolocation database [Source: APNIC, ARIN, LACNIC and RIPE] Live Help Ip2Country Database, .
+	- Requirement: Minimum 2MB MySQL database, Zlib compression support and 32MB PHP memory.
+* FEATURE: IP2Country displays site visitors/offline email's source country [98% accurate]
+* FEATURE: added ability to add PUSH commands directly to the Live Help commands menu.
+* FEATURE: added 'Connecting to Operator' while site visitor is waiting for Live Help session to be accepted.
+* FEATURE: added JavaScript mouse over 'What is Live Help?' hover dialog.
+* FEATURE: added number of current waiting site visitors when waiting for support.
+* FEATURE: added the language pack settings within the Admin -> Settings menu's.
+* FEATURE: added CSS tooltips throughout the Live Help > Settings.
+* FEATURE: added Site Visitors one page summary for high traffic sites, include current page they are viewing and times [Windows Preview Application ONLY].
+
+* IMPROVEMENT: resolve various browsers with the GoogleBar 2.0+, and Popup Blockers will preventing/blocking Initate Chat function.
+* IMPROVEMENT: resolve initiate chat popup occuring when site visitor browse's away from the current Initiated web page, made INSTANTLY floating popup.
+* IMPROVEMENT: resolved the Online Tracker online refresher (to stay online) stops if user has been Idle for 2 hours 30 minutes  (Saves Bandwidth).
+* IMPROVEMENT: resolved if Admin user terminate aborts unexpectedly the Staff Member can Login and resume the Live Help session.
+* IMPROVEMENT: added ability to include status image without JavaScript document.write, PHP now dynamically outputs the images to the HTML code.
+	- Warning: requires new Live Help Status code block [more stable status indicator] to be inserted on pages, rather than external Javascript link.
+* IMPROVEMENT: added Windows Client change status, Online/Offline/Be Right Back.
+* IMPROVEMENT: added option/link for the site visitor to leave an offline message even if Live Help is online.
+* IMPROVEMENT: changed the main site vistor Live Help interface to use iFrames if available, enhanced the interface.
+* IMPROVEMENT: passwords now stored in MySQL as a MD5 hash to provide extra security.
+* IMPROVEMENT: initiate chat dialog modified to provide a unique look and feel.
+* IMPROVEMENT: site visitor is unable to send messages unless an Operator approves/accepts the Live Help session, session must also not be closed. 
+* IMPROVEMENT: added optional PHP customer error handler, all PHP errors are now logged to /livehelp/log/ERRORLOG.TXT if writable
+	- Requirement: Error log file [/livehelp/log/ERRORLOG.TXT] must be writable by PHP, eg. CHMOD 777
+
+BUG FIXES ( Version 2.1 - 2.6 )
+
+* BUG FIX: resolved Mac OS messenger dissappearing issues, removed HTTP 1.0 204: No Content Header
+* BUG FIX: resolved PHP environment variable DOCUMENT_ROOT not pointing to correct location, include path and install domain now detected during Installation.
+* BUG FIX: resolved issue with the auto-refresh with the Administration Online/Pending/Offline users panel.
+* BUG FIX: resolved issue with the Pending/Ignore users not remembering the Web Client Refresh Setting.
+* BUG FIX: resolved windows client browsing popup's opening, if the client is not Online.
+* BUG FIX: resolved XP form styles when using the Windows Client. 
+* BUG FIX: resolved calendar not remaining on the desired month when a daily report is retrieved.
+* BUG FIX: resolved broken Live Help logo images within guest client.
+* BUG FIX: resolved daily reports email link and session conflicts within status indicators.
+
+------------------------------------
+
+Previously Released Stable Version: 2.1 Final CHANGELOG
+
+------------------------------------
+
+
+NEW FEATURES ( Version 2.0 - 2.1 )
+
+* FEATURE: added New Recieved Message and Logout sounds for active chat transcript on Administration (Internet Explorer 5.5+/Win32 Client ONLY)
+* FEATURE: added Offline users when clicked loads the previous chat transcript for later reference.
+* FEATURE: added JavaScript option and type to Commands/Responses, now able to send the user Advanced JavaScript.
+* FEATURE: added JavaScript window popups to be centered within the screen dimensions.
+* FEATURE: added ability for Root (Superuser) and Full Administrator's to disable accounts.
+* FEATURE: added user level privlidges:
+	- Root (Superuser): ALL Access, user access level, and account status can't be changed by anyone.
+	- Full Administrator: ALL Access, ability to change users' access levels, and account status.
+	- Department Administrator:  ALL Access, ability to change users' details, add/disable user access within department.
+	- Limited Administrator: ALL Access, but NO ability to change users' access levels, and account status.
+	- Support/Sale Staff: Access to Support users ONLY, read access to Settings.
+	- Guest: Access to Support users ONLY.
+* FEATURE: added initate chat function to auto login site visitor and popup Live Help window.
+* FEATURE: added chat refresh rate time setting in Admin -> Settings -> Time.
+* FEATURE: added guest client window is bought into focus when messages are sent/received if necesscary.
+* FEATURE: added option to turn on/off user list panel, added bold options for current selection.
+* FEATURE: added current page title and link to open the current URL.
+* FEATURE: added Macromedia Flash sounds control to improve web-based sound support.
+* FEATURE: added the newest status indicator/ online tracker code in Admin -> Settings -> Code.
+	- JavaScript tracker can now be placed on pages without displaying the status indicator.
+	- JavaScript status indicator can now be added with the JavaScript tracker disabled.
+
+BUG FIXES ( Version 2.0 - 2.1 )
+
+* BUG FIX: resolved the BRB not updating the Setting within the settings table.
+* BUG FIX: resolved issue with departments not showing correctly, and issue with /livehelp/admin/users_header.php.
+* BUG FIX: resolved issue with /livehelp/include/check_status_js.php indexed by WebSpiders.
+* BUG FIX: improved authentication session unexpectedly terminated error message.
+* BUG FIX: resolved sending JavaScript code is disabled on the guest side.
+* BUG FIX: resolved JavaScript Unterminated Line text area paste bug.
+* BUG FIX: resolved itermitent CPU load issue regarding message refresh rate.
+* BUG FIX: resolved one of the smilies not displaying correctly.
+* BUG FIX: resolved several of the Admin -> Settings not updating.

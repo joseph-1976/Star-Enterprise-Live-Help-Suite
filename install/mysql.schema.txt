@@ -1,0 +1,156 @@
+# phpMyAdmin SQL Dump
+# version 2.5.6
+# http://www.phpmyadmin.net
+#
+# Host: localhost
+# Generation Time: Apr 15, 2004 at 11:43 PM
+# Server version: 4.0.16
+# PHP Version: 4.3.2
+# 
+# Database : `livehelp`
+# 
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_commands`
+#
+
+CREATE TABLE `prefix_commands` (
+  `command_id` int(5) NOT NULL auto_increment,
+  `type` varchar(10) NOT NULL default '',
+  `description` varchar(255) NOT NULL default '',
+  `contents` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`command_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_messages`
+#
+
+CREATE TABLE `prefix_messages` (
+  `message_id` bigint(20) NOT NULL auto_increment,
+  `from_login_id` bigint(20) NOT NULL default '0',
+  `to_login_id` bigint(20) NOT NULL default '0',
+  `message_datetime` datetime NOT NULL default '0000-00-00 00:00:00',
+  `message` tinytext NOT NULL,
+  `dest_flag` int(1) NOT NULL default '0',
+  `src_flag` int(1) NOT NULL default '0',
+  `display_time` tinyint(1) NOT NULL default '0',
+  `display_username` tinyint(1) NOT NULL default '0',
+  `display_align` tinyint(1) NOT NULL default '0',
+  `hidden` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`message_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_requests`
+#
+
+CREATE TABLE `prefix_requests` (
+  `request_id` bigint(20) NOT NULL auto_increment,
+  `session_id` varchar(150) NOT NULL default '',
+  `ip_address` varchar(100) NOT NULL default '',
+  `user_agent` varchar(200) NOT NULL default '',
+  `first_request` datetime NOT NULL default '0000-00-00 00:00:00',
+  `last_request` datetime NOT NULL default '0000-00-00 00:00:00',
+  `last_refresh` datetime NOT NULL default '0000-00-00 00:00:00',
+  `current_page` varchar(100) NOT NULL default '',
+  `current_page_title` varchar(150) NOT NULL default '',
+  `referrer` varchar(100) NOT NULL default '',
+  `page_path` text NOT NULL,
+  `request_flag` bigint(20) NOT NULL default '0',
+  `status` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`request_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_responses`
+#
+
+CREATE TABLE `prefix_responses` (
+  `response_id` int(5) NOT NULL auto_increment,
+  `contents` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`response_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_sessions`
+#
+
+CREATE TABLE `prefix_sessions` (
+  `login_id` bigint(20) NOT NULL auto_increment,
+  `session_id` varchar(150) NOT NULL default '',
+  `username` varchar(30) NOT NULL default '',
+  `datetime` datetime NOT NULL default '0000-00-00 00:00:00',
+  `email` varchar(50) NOT NULL default '',
+  `ip_address` varchar(100) NOT NULL default '',
+  `server` varchar(100) NOT NULL default '',
+  `support_department` varchar(50) NOT NULL default '',
+  `support_username` varchar(30) NOT NULL default '',
+  `rating` int(1) NOT NULL default '0',
+  `typing_status` int(1) NOT NULL default '0',
+  `support_typing_status` int(1) NOT NULL default '0',
+  `active` bigint(20) NOT NULL default '0',
+  `transfer_id` bigint(20) NOT NULL default '0',
+  `timeout` int(1) NOT NULL default '0',
+  `last_refresh` datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  (`login_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_settings`
+#
+
+CREATE TABLE `prefix_settings` (
+  `setting_id` bigint(20) NOT NULL auto_increment,
+  `setting_name` varchar(50) NOT NULL default '',
+  `setting_value` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`setting_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_statistics`
+#
+
+CREATE TABLE `prefix_statistics` (
+  `statistics_id` bigint(20) NOT NULL auto_increment,
+  `login_id` bigint(20) NOT NULL default '0',
+  `user_agent` varchar(200) NOT NULL default '',
+  `resolution` varchar(200) NOT NULL default '',
+  `hostname` varchar(200) NOT NULL default '',
+  `referer_url` varchar(200) NOT NULL default '',
+  PRIMARY KEY  (`statistics_id`)
+) TYPE=MyISAM;
+
+# --------------------------------------------------------
+
+#
+# Table structure for table `prefix_users`
+#
+
+CREATE TABLE `prefix_users` (
+  `user_id` bigint(20) NOT NULL auto_increment,
+  `username` varchar(30) NOT NULL default '',
+  `password` varchar(100) NOT NULL default '',
+  `first_name` varchar(50) NOT NULL default '',
+  `last_name` varchar(50) NOT NULL default '',
+  `email` varchar(50) NOT NULL default '',
+  `department` varchar(100) NOT NULL default '',
+  `last_login_id` bigint(20) NOT NULL default '0',
+  `account_status` int(1) NOT NULL default '0',
+  `access_level` int(1) NOT NULL default '0',
+  PRIMARY KEY  (`user_id`)
+) TYPE=MyISAM;

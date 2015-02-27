@@ -1,0 +1,50 @@
+# phpMyAdmin MySQL-Dump
+# version 2.5.0
+# http://www.phpmyadmin.net/ (download page)
+#
+# Host: localhost
+# Generation Time: Jul 26, 2003 at 04:44 PM
+# Server version: 4.0.12
+# PHP Version: 4.3.1
+# Database : `livehelp`
+# --------------------------------------------------------
+
+#
+# Dumping data for table `prefix_settings`
+#
+
+INSERT INTO `prefix_settings` VALUES (8, 'guest_smilies', 'true');
+INSERT INTO `prefix_settings` VALUES (9, 'admin_smilies', 'false');
+INSERT INTO `prefix_settings` VALUES (10, 'font_type', 'Verdana, Arial, Helvetica, sans-serif');
+INSERT INTO `prefix_settings` VALUES (11, 'font_size', '13px');
+INSERT INTO `prefix_settings` VALUES (12, 'font_color', '#000000');
+INSERT INTO `prefix_settings` VALUES (13, 'sent_font_color', '#666666');
+INSERT INTO `prefix_settings` VALUES (14, 'received_font_color', '#000000');
+INSERT INTO `prefix_settings` VALUES (15, 'font_link_color', '#333399');
+INSERT INTO `prefix_settings` VALUES (16, 'background_color', '#FAFFFF');
+INSERT INTO `prefix_settings` VALUES (17, 'background_image', '');
+INSERT INTO `prefix_settings` VALUES (18, 'guest_chat_font_size', '2');
+INSERT INTO `prefix_settings` VALUES (19, 'admin_chat_font_size', '2');
+INSERT INTO `prefix_settings` VALUES (20, 'offline_logo', '/livehelp/locale/en/images/offline_transparent.gif');
+INSERT INTO `prefix_settings` VALUES (21, 'online_logo', '/livehelp/locale/en/images/online_transparent.gif');
+INSERT INTO `prefix_settings` VALUES (22, 'offline_logo_without_email', '/livehelp/locale/en/images/offline_msg_transparent.gif');
+INSERT INTO `prefix_settings` VALUES (23, 'online_brb_logo', '/livehelp/locale/en/images/online_brb_transparent.gif');
+INSERT INTO `prefix_settings` VALUES (24, 'online_away_logo', '/livehelp/locale/en/images/online_away_transparent.gif');
+INSERT INTO `prefix_settings` VALUES (25, 'disable_login_details', 'false');
+INSERT INTO `prefix_settings` VALUES (26, 'disable_offline_email', 'false');
+INSERT INTO `prefix_settings` VALUES (27, 'departments', 'true');
+INSERT INTO `prefix_settings` VALUES (28, 'default_department', 'General');
+INSERT INTO `prefix_settings` VALUES (29, 'connection_timeout', '30');
+INSERT INTO `prefix_settings` VALUES (30, 'keep_alive_timeout', '15');
+INSERT INTO `prefix_settings` VALUES (31, 'guest_login_timeout', '60');
+INSERT INTO `prefix_settings` VALUES (32, 'chat_refresh_rate', '2');
+INSERT INTO `prefix_settings` VALUES (33, 'user_panel_refresh_rate', '10');
+INSERT INTO `prefix_settings` VALUES (34, 'timezone', '+1000');
+INSERT INTO `prefix_settings` VALUES (35, 'language_type', 'en, iso-8859-1');
+INSERT INTO `prefix_settings` VALUES (36, 'admin_homepage', '/livehelp/admin/visitors_index.php');
+INSERT INTO `prefix_settings` VALUES (37, 'initiate_chat_valign', 'top');
+INSERT INTO `prefix_settings` VALUES (38, 'initiate_chat_halign', 'right');
+INSERT INTO `prefix_settings` VALUES (39, 'disable_chat_time', 'true');
+INSERT INTO `prefix_settings` VALUES (40, 'disable_chat_username', 'false');
+INSERT INTO `prefix_settings` VALUES (43, 'ip2country_installed', 'false');
+INSERT INTO `prefix_settings` VALUES (44, 'disable_popup_help', 'false');
